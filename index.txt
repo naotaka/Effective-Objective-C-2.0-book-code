@@ -1,0 +1,73 @@
+Table of Contents
+Preface         xi
+
+Acknowledgments         xv
+About the Author         xvii
+ 
+Chapter 1: Accustoming Yourself to Objective-C          1
+Item 1: Familiarize Yourself with Objective-C’s Roots  1
+Item 2: Minimize Importing Headers in Headers  4
+Item 3: Prefer Literal Syntax over the Equivalent Methods  8
+Item 4: Prefer Typed Constants to Preprocessor #define  12
+Item 5: Use Enumerations for States, Options, and Status Codes  17
+ 
+Chapter 2: Objects, Messaging, and the Runtime         25
+Item 6: Understand Properties  25
+Item 7: Access Instance Variables Primarily Directly When Accessing Them Internally  33
+Item 8: Understand Object Equality  36
+Item 9: Use the Class Cluster Pattern to Hide Implementation Detail  42
+Item 10: Use Associated Objects to Attach Custom Data to Existing Classes  47
+Item 11: Understand the Role of objc_msgSend  50
+Item 12: Understand Message Forwarding  54
+Item 13: Consider Method Swizzling to Debug Opaque Methods  62
+Item 14: Understand What a Class Object Is  66
+ 
+Chapter 3: Interface and API Design         73
+Item 15: Use Prefix Names to Avoid Namespace Clashes  73
+Item 16: Have a Designated Initializer  78
+Item 17: Implement the description Method  84
+Item 18: Prefer Immutable Objects  89
+Item 19: Use Clear and Consistent Naming  95
+Item 20: Prefix Private Method Names  102
+Item 21: Understand the Objective-C Error Model  104
+Item 22: Understand the NSCopying Protocol  109
+ 
+Chapter 4: Protocols and Categories         115
+Item 23: Use Delegate and Data Source Protocols for Interobject Communication  115
+Item 24: Use Categories to Break Class Implementations into Manageable Segments  123
+Item 25: Always Prefix Category Names on Third-Party Classes  127
+Item 26: Avoid Properties in Categories  130
+Item 27: Use the Class-Continuation Category to Hide Implementation Detail  133
+Item 28: Use a Protocol to Provide Anonymous Objects  140
+ 
+Chapter 5: Memory Management         145
+Item 29: Understand Reference Counting  145
+Item 30: Use ARC to Make Reference Counting Easier  153
+Item 31: Release References and Clean Up Observation State Only in dealloc  162
+Item 32: Beware of Memory Management with Exception-Safe Code  165
+Item 33: Use Weak References to Avoid Retain Cycles  168
+Item 34: Use Autorelease Pool Blocks to Reduce High-Memory Waterline  173
+Item 35: Use Zombies to Help Debug Memory-Management Problems  177
+Item 36: Avoid Using retainCount  183
+ 
+Chapter 6: Blocks and Grand Central Dispatch          187
+Item 37: Understand Blocks  188
+Item 38: Create typedefs for Common Block Types  194
+Item 39: Use Handler Blocks to Reduce Code Separation  197
+Item 40: Avoid Retain Cycles Introduced by Blocks Referencing the Object Owning Them  203
+Item 41: Prefer Dispatch Queues to Locks for Synchronization  208
+Item 42: Prefer GCD to performSelector and Friends  213
+Item 43: Know When to Use GCD and When to Use Operation Queues  217
+Item 44: Use Dispatch Groups to Take Advantage of Platform Scaling  220
+Item 45: Use dispatch_once for Thread-Safe Single-Time Code Execution  225
+Item 46: Avoid dispatch_get_current_queue  226
+ 
+Chapter 7: The System Frameworks         233
+Item 47: Familiarize Yourself with the System Frameworks  233
+Item 48: Prefer Block Enumeration to for Loops  236
+Item 49: Use Toll-Free Bridging for Collections with Custom Memory-Management Semantics  243
+Item 50: Use NSCache Instead of NSDictionary for Caches  248
+Item 51: Keep initialize and load Implementations Lean  252
+Item 52: Remember that NSTimer Retains Its Target  258
+ 
+Index          265
